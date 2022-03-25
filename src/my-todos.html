@@ -1,3 +1,5 @@
+<import from="./todo-item"></import>
+
 <div class="todos-app">
     
     <h1 class="todos-app__header">My Todo's</h1>
@@ -16,10 +18,10 @@
         </form>
     
         <div class="todo__items">
-            <div
+            <todo-item
                 repeat.for="todo of todos"
                 class="todo-item" 
-            >${todo.text}</div>
+            >${todo.text}</todo-item>
         </div>
     </div>
 
