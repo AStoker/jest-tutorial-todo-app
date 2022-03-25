@@ -1,7 +1,7 @@
 {
-    "name": "todo-app-final",
+    "name": "todo-app",
     "description": "A simple TODO app to show unit tests",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "repository": {
         "type": "git",
         "url": "???"

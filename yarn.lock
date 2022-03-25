@@ -10658,9 +10658,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"todo-app-final@workspace:.":
+"todo-app@workspace:.":
   version: 0.0.0-use.local
-  resolution: "todo-app-final@workspace:."
+  resolution: "todo-app@workspace:."
   dependencies:
     "@aurelia/babel-jest": latest
     "@aurelia/plugin-gulp": latest
