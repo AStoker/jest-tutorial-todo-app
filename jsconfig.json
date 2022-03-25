@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "amd",
+        "checkJs": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./src"
+    },
+    "exclude": [
+        "dist"
+    ]
+}
