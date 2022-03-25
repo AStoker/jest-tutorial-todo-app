@@ -4,7 +4,8 @@
         "module": "amd",
         "checkJs": true,
         "experimentalDecorators": true,
-        "baseUrl": "./src"
+        "baseUrl": "./src",
+        "moduleResolution": "node"
     },
     "exclude": [
         "dist"

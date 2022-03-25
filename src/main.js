@@ -1,5 +1,5 @@
 import Aurelia, { StyleConfiguration } from 'aurelia';
-import { MyApp } from './my-app';
+import { MyTodos } from './my-todos';
 import shared from './shared.scss';
 
 Aurelia
@@ -7,5 +7,5 @@ Aurelia
         // optionally add the shared styles for all components
         sharedStyles: [shared]
     }))
-    .app(MyApp)
+    .app(MyTodos)
     .start();
