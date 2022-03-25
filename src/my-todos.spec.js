@@ -13,4 +13,47 @@ describe('my-todos', () => {
         expect(text.trim()).toBe('My Todo\'s');
     });
 
+    describe('todo management', () => {
+
+        describe('adding todos', () => {
+            it('should create a new todo', () => {
+                const myTodos = new MyTodos();
+    
+                expect(myTodos.todos.length).toBe(0);
+    
+                myTodos.newTodo('Buy milk');
+    
+                expect(myTodos.todos.length).toBe(1);
+                expect(myTodos.todos[0].text).toBe('Buy milk');
+                expect(myTodos.todos[0].completed).toBe(false);
+            });
+    
+            it('should put new todos first', () => {
+                const myTodos = new MyTodos();
+    
+                myTodos.newTodo('Buy milk');
+                myTodos.newTodo('Buy bread');
+    
+                expect(myTodos.todos[0].text).toBe('Buy bread');
+                expect(myTodos.todos[1].text).toBe('Buy milk');
+            });
+        });
+
+        describe('deleting todos', () => {
+            it('should delete a todo', () => {
+                const myTodos = new MyTodos();
+    
+                myTodos.newTodo('Buy milk');
+                myTodos.newTodo('Buy bread');
+    
+                expect(myTodos.todos.length).toBe(2);
+    
+                myTodos.deleteTodo(0);
+    
+                expect(myTodos.todos.length).toBe(1);
+                expect(myTodos.todos[0].text).toBe('Buy milk');
+            });
+        })
+
+    });
 });
