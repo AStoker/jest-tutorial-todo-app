@@ -7,5 +7,8 @@ export async function render(template, ...deps) {
         component: wrapper
     });
     await au.start();
-    return div;
+    return {
+        au,
+        document: div
+    };
 }
