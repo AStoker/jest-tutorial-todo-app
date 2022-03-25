@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="0" errors="0" time="2.01">
-  <testsuite name="my-todos" errors="0" failures="0" skipped="2" timestamp="2022-03-25T18:35:42" time="1.016" tests="2">
+<testsuites name="jest tests" tests="6" failures="1" errors="0" time="28.527">
+  <testsuite name="my-todos" errors="0" failures="1" skipped="5" timestamp="2022-03-25T20:50:38" time="27.332" tests="6">
     <testcase classname="my-todos should render the header text" name="my-todos should render the header text" time="0">
       <skipped/>
     </testcase>
-    <testcase classname="my-todos todo management should create a new todo" name="my-todos todo management should create a new todo" time="0">
+    <testcase classname="my-todos todo management adding todos should create a new todo" name="my-todos todo management adding todos should create a new todo" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="my-todos todo management adding todos should create a new todo from an input" name="my-todos todo management adding todos should create a new todo from an input" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="my-todos todo management adding todos should put new todos first" name="my-todos todo management adding todos should put new todos first" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="my-todos todo management adding todos should clear the input after adding todo" name="my-todos todo management adding todos should clear the input after adding todo" time="26.144">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;&quot;
+Received: &quot;Buy milk&quot;
+    at Object.&lt;anonymous&gt; (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/src/my-todos.spec.js:64:37)</failure>
+    </testcase>
+    <testcase classname="my-todos todo management deleting todos should delete a todo" name="my-todos todo management deleting todos should delete a todo" time="0">
       <skipped/>
     </testcase>
   </testsuite>

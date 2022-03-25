@@ -1,1 +1,26 @@
-<h1>My Todo's</h1>
+<div class="todos-app">
+    
+    <h1 class="todos-app__header">My Todo's</h1>
+    
+    <div class="todo">
+        <form action="#" submit.trigger="newTodo(todo)">
+            <div class="todo__compose">
+                <input
+                    type="text"
+                    name="todo-text"
+                    class="todo-compose__input"
+                    placeholder="What needs to be done?"
+                    value.bind="todo"
+                >
+            </div>
+        </form>
+    
+        <div class="todo__items">
+            <div
+                repeat.for="todo of todos"
+                class="todo-item" 
+            >${todo.text}</div>
+        </div>
+    </div>
+
+</div>

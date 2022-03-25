@@ -7,8 +7,14 @@ export async function render(template, ...deps) {
         component: wrapper
     });
     await au.start();
+
     return {
         au,
+        getViewModel(vm) {
+            return au.root.controller.children.find(c => {
+                return c.viewModel instanceof vm;
+            }).viewModel;
+        },
         document: div
     };
 }
