@@ -4,11 +4,11 @@ This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
 ## Start dev web server
 
-    npm start
+    yarn run start
 
 ## Build the app in production mode
 
-    npm run build
+    yarn run run build
 
 It builds `dist/*bundle.[hash].js`, updates index.html with hashed js bundle file name. To deploy to production server, copy over both the generated `index.html` and all the `dist/*` files.
 
@@ -25,19 +25,19 @@ root_folder/dist/entry.bundle.12345.js
 
 ## Unit Tests
 
-    npm run test
+    yarn run test
 
 Run unit tests in watch mode.
 
-    npm run test:watch
+    yarn run test:watch
 
 
 ## Clear tracing cache
 
 In rare situation, you might need to run clear-cache after upgrading to new version of dumber bundler.
 
-    npm run clear-cache
+    yarn run clear-cache
 
 ## index.html
 
-`index.html` is generated from `_index.html` every time `npm run build` runs. It is handled by dumber's `onManifest()` option, check `gulpfile.js` for details.
+`index.html` is generated from `_index.html` every time `yarn run build` runs. It is handled by dumber's `onManifest()` option, check `gulpfile.js` for details.
