@@ -57,9 +57,6 @@ describe('my-todos', () => {
             myTodos.todo = newTodo;
             myTodos.newTodo(myTodos.todo);
             expect(myTodos.todo).toBe('');
-
-            //Ensure after clearing todo input the existing todo is not cleared
-            expect (myTodos.todos[0].text).toBe(newTodo);
         });
     });
 

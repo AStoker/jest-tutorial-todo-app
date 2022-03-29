@@ -206,7 +206,7 @@ function reload(done) {
 
 // Watch all files for rebuild and reload dev server.
 function watch() {
-    gulp.watch('src/**/*', gulp.series(build, reload));
+    gulp.watch(['src/**/*', '!src/**/*.spec.js'], gulp.series(build, reload));
 }
 
 const run = gulp.series(clean, serve, watch);

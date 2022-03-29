@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="1" errors="0" time="28.527">
-  <testsuite name="my-todos" errors="0" failures="1" skipped="5" timestamp="2022-03-25T20:50:38" time="27.332" tests="6">
-    <testcase classname="my-todos should render the header text" name="my-todos should render the header text" time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="my-todos todo management adding todos should create a new todo" name="my-todos todo management adding todos should create a new todo" time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="my-todos todo management adding todos should create a new todo from an input" name="my-todos todo management adding todos should create a new todo from an input" time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="my-todos todo management adding todos should put new todos first" name="my-todos todo management adding todos should put new todos first" time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="my-todos todo management adding todos should clear the input after adding todo" name="my-todos todo management adding todos should clear the input after adding todo" time="26.144">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
+<testsuites name="jest tests" tests="3" failures="1" errors="0" time="74.095">
+  <testsuite name="Todo Item" errors="0" failures="1" skipped="2" timestamp="2022-03-29T19:48:22" time="73.027" tests="3">
+    <testcase classname="Todo Item should be defined" name="Todo Item should be defined" time="62.381">
+      <failure>Error: expect(received).toBeDefined()
 
-Expected: &quot;&quot;
-Received: &quot;Buy milk&quot;
-    at Object.&lt;anonymous&gt; (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/src/my-todos.spec.js:64:37)</failure>
+Received: undefined
+    at Object.&lt;anonymous&gt; (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/src/todo-item.spec.js:19:26)
+    at Promise.then.completed (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-circus-npm-27.5.1-d8d9d88da5-6192dccbcc.zip/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-runner-npm-27.5.1-2ed2c1cda8-5bbe6cf847.zip/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-runner-npm-27.5.1-2ed2c1cda8-5bbe6cf847.zip/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/cache/jest-runner-npm-27.5.1-2ed2c1cda8-5bbe6cf847.zip/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/__virtual__/@jest-core-virtual-382509d218/0/cache/@jest-core-npm-27.5.1-b2d79816b3-904a94ad8f.zip/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/__virtual__/@jest-core-virtual-382509d218/0/cache/@jest-core-npm-27.5.1-b2d79816b3-904a94ad8f.zip/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/__virtual__/@jest-core-virtual-382509d218/0/cache/@jest-core-npm-27.5.1-b2d79816b3-904a94ad8f.zip/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/__virtual__/@jest-core-virtual-382509d218/0/cache/@jest-core-npm-27.5.1-b2d79816b3-904a94ad8f.zip/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/andrewstoker/Projects/Learning Sessions/Testing/Unit Testing/todo-app/.yarn/__virtual__/jest-cli-virtual-2237da22cf/0/cache/jest-cli-npm-27.5.1-e801369688-6c0a69fb48.zip/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="my-todos todo management deleting todos should delete a todo" name="my-todos todo management deleting todos should delete a todo" time="0">
+    <testcase classname="Todo Item should set default states" name="Todo Item should set default states" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Todo Item should trigger delete when clicked" name="Todo Item should trigger delete when clicked" time="0">
       <skipped/>
     </testcase>
   </testsuite>

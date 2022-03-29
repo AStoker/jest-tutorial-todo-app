@@ -23,6 +23,10 @@
                 "${jest.testNamePattern}",
                 "--runTestsByPath",
                 "${jest.testFile}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js",
+                "!**/node_modules/**"
             ]
         }
     ]
