@@ -156,7 +156,10 @@ function build() {
     // sending to dumber.
     return merge2(
             gulp.src('src/**/*.json'),
-            buildJs('src/**/*.js'),
+            buildJs([
+                'src/**/*.js',
+                '!src/**/*.spec.js'
+            ]),
             buildHtml('src/**/*.html'),
             buildCss('src/**/*.{scss,css}')
         )

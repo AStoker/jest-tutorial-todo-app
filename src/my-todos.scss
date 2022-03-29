@@ -60,11 +60,4 @@
         overflow: auto;
     }
 
-    .todo-item {
-        align-items: center;
-        border-bottom: 1px solid #ededed;
-        display: grid;
-        grid-template-columns: 50px 450px 50px;
-        word-wrap: break-word;
-    }
 }

@@ -20,8 +20,11 @@
         <div class="todo__items">
             <todo-item
                 repeat.for="todo of todos"
-                class="todo-item" 
-            >${todo.text}</todo-item>
+                class="todo-item"
+                completed.bind="todo.completed"
+                text.bind="todo.text"
+                delete.call="deleteTodo($index)"
+            ></todo-item>
         </div>
     </div>
 

@@ -1,3 +1,12 @@
 
-
-<slot></slot>
+<div
+    class="todo-item"
+    completed.class="completed"
+>
+    <input type="checkbox" checked.bind="completed">
+    <p
+        contenteditable="true"
+        spellcheck="false"
+    >${text}</p>
+    <button click.trigger="delete()">X</button>
+</div>

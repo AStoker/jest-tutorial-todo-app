@@ -53,10 +53,13 @@ describe('my-todos', () => {
         it('should clear the input after adding todo', async () => {
             const myTodos = new MyTodos();
 
-            const newTodo = 'Buy milk';
+            let newTodo = 'Buy milk';
             myTodos.todo = newTodo;
             myTodos.newTodo(myTodos.todo);
             expect(myTodos.todo).toBe('');
+
+            //Ensure after clearing todo input the existing todo is not cleared
+            expect (myTodos.todos[0].text).toBe(newTodo);
         });
     });
 
